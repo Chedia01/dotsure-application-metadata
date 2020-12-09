@@ -164,8 +164,6 @@ export default {
       this.userData = result
     },
     removeUser(id, index) {
-      console.log(id)
-      console.log(index)
       this.$axios
         .$delete(`/api/user/${id}`)
         .then((response) => {
